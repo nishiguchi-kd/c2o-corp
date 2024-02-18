@@ -9,7 +9,8 @@
     letter-spacing: 3px;
     border-left: solid 3px #D9D9D9;
     padding: 0 0 0 30px;
-    margin: 0 0 40px 0;
+    margin: 0 auto 40px;
+    width: 830px;
     span{
         font-size: 2.6rem;
         display: block;
@@ -18,6 +19,7 @@
 }
 .companySection01{
     .companyBlock{
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -40,6 +42,8 @@
 }
 
 .companySection02{
+    width: 830px;
+    margin: 0 auto;
     dl{
         display: flex;
         font-size: 1.4rem;
@@ -59,4 +63,9 @@
         }
     }
 }
+
+.companySection03{
+    background: url(/images/bg_2.png) no-repeat top 0px right -360px;
+}
+
 

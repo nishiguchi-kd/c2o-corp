@@ -26,6 +26,7 @@
         font-weight: normal;
         text-align: center;
         transform: translate(-270px, 0px);
+        font-weight: 100;
     }
     div{
         color: #000;
@@ -50,16 +51,25 @@
         font-size: 34rem;
         color: #FAC000;
         font-weight: 100;
+        width: 1200px;
+        margin: 0 auto;
+
     }
     h4{
-        font-size: 3rem;
-        background: #1C2F55;
-        color: #fff;
-        padding: 18px 20px;
-        display: inline-block;
-        transform: translate(0, -140px);
+        width: 1200px;
+        margin: 0 auto;
+        span{
+            font-size: 3rem;
+            background: #1C2F55;
+            color: #fff;
+            padding: 18px 20px;
+            display: inline-block;
+            transform: translate(0, -140px);
+        }
     }
     p{
+        width: 1200px;
+        margin: 0 auto;
         font-size: 2rem; 
         line-height: 2;
         font-weight: 100;
@@ -68,13 +78,18 @@
 }
 
 .topSection01{
-    padding: 40px 0 0 0;
+    padding: 40px 40px 60px;
     background: #FDE01D;
+    // width: 100vw;
+    overflow: hidden;
     .topBlock{
+        width: 1000px;
+        margin: 0 auto;
         display: flex;
+        gap: 20px;
+        padding: 0 0 40px 0;
         &ListItem{
-            // width: calc(100% / 1);
-            width: 640px;
+            display: inline-table;
             .figcaption{
                 font-size: 3.2rem;
                 font-weight: 100;
@@ -92,6 +107,7 @@
 
 .topSection02{
     padding: 48px 0 0 0;
+    position: relative;
     .topBlock{
         display: flex;
         .topBlockListItem{
@@ -114,7 +130,18 @@
                 font-size: 1.6rem;
                 font-weight: 100;
                 line-height: 2.0;
+                padding: 0 0 24px 0;
             }
         }
     }
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     background: url(/images/bg_o.png) no-repeat;
+    //     width: 920px;
+    //     height: 900px;
+    //     position: absolute;
+    //     bottom: -150px;
+    //     left: -300px;
+    // }
 }

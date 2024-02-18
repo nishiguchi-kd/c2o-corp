@@ -31,7 +31,7 @@
                 text-align: left;
                 font-size: 1.5rem;
                 line-height: 1.6;
-                padding: 0 0 150px;
+                padding: 0 20px 150px;
             }
         }
     }
@@ -41,6 +41,13 @@
     .aboutText01{
         font-size: 1.5rem;
         line-height: 1.6;
-        padding: 0 0 40px;
     }
+}
+
+.aboutSection02{
+    padding: 0 0 160px;
+}
+
+.aboutSection03{
+    background: url(/images/bg_2.png) no-repeat top 0px right -360px;
 }

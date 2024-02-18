@@ -1,9 +1,14 @@
 .header {
-    background-color: #1C2F55;
-    padding: 30px;
     nav{
       display: flex;
       justify-content: space-between;
+      padding: 30px;
+      background-color: #1C2F55;
+      // position: fixed;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      // z-index: 1000;
     }
     ul{
       display: flex;
