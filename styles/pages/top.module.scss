@@ -1,0 +1,120 @@
+// styles/pages/top.module.scss
+@use '_mixins.scss' as *; // `path/to/mixins`は_mixins.scssファイルの実際のパスに置き換えてください
+
+.topMainvisual{
+    min-height: 100vh;
+    position: relative;
+    background: url(/images/bg_c.png) no-repeat top -260px left 150px, url(/images/bg_2.png) no-repeat bottom 0px right -360px;
+    h1{
+        font-size: 18rem;
+        text-align: left;
+        padding: 130px 0 0 0;
+        font-family: 'Tinos', serif;
+        @include is-sp {
+            font-size: 2rem;
+        }
+    }
+    h2{
+        font-size: 18rem;
+        text-align: right;
+        padding: 0 0 50px 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 100;
+    }
+    p{
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: center;
+        transform: translate(-270px, 0px);
+    }
+    div{
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        padding: 40px 0 0 0;
+        &:after{
+            display: block;
+            content: "";
+            width: 1px;
+            height: 84px;
+            background: #000;
+            margin: 10px auto 0;
+        }
+    }
+}
+
+.topRead{
+    width: 100vw;
+    overflow: hidden;
+    h3{
+        font-size: 34rem;
+        color: #FAC000;
+        font-weight: 100;
+    }
+    h4{
+        font-size: 3rem;
+        background: #1C2F55;
+        color: #fff;
+        padding: 18px 20px;
+        display: inline-block;
+        transform: translate(0, -140px);
+    }
+    p{
+        font-size: 2rem; 
+        line-height: 2;
+        font-weight: 100;
+        transform: translate(0, -100px);
+    }
+}
+
+.topSection01{
+    padding: 40px 0 0 0;
+    background: #FDE01D;
+    .topBlock{
+        display: flex;
+        &ListItem{
+            // width: calc(100% / 1);
+            width: 640px;
+            .figcaption{
+                font-size: 3.2rem;
+                font-weight: 100;
+                padding: 10px 0 10px;
+            }
+            p{
+                text-align: left;
+                font-size: 1.5rem;
+                line-height: 1.6;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.topSection02{
+    padding: 48px 0 0 0;
+    .topBlock{
+        display: flex;
+        .topBlockListItem{
+            width: 40%;
+            &Text01{
+                font-size: 2rem;
+                font-weight: 100;
+                padding: 40px 0 15px 0;
+            }
+            &Text02{
+                font-size: 5.5rem;
+                font-weight: 300;
+                padding: 0 0 15px 0;
+            }
+            &Text03{
+                font-size: 1.6rem;
+                padding: 0 0 20px 0;
+            }
+            &Text04{
+                font-size: 1.6rem;
+                font-weight: 100;
+                line-height: 2.0;
+            }
+        }
+    }
+}

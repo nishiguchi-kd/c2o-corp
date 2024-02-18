@@ -1,0 +1,46 @@
+// styles/pages/about.module.scss
+  
+.aboutTitle01 {
+    font-size: 3.0rem;
+    padding: 0 0 40px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.aboutText01 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0 0 80px 0;
+}
+.aboutSection01,
+.aboutSection02,
+.aboutSection03{
+    text-align: center;
+}
+.aboutSection01{
+    .aboutBlock{
+        display: flex;
+        flex-wrap: wrap;
+        &ListItem{
+            width: calc(100% / 3);
+            .figcaption{
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 20px 0 15px;
+            }
+            p{
+                text-align: left;
+                font-size: 1.5rem;
+                line-height: 1.6;
+                padding: 0 0 150px;
+            }
+        }
+    }
+}
+
+.aboutSection02,.aboutSection03{
+    .aboutText01{
+        font-size: 1.5rem;
+        line-height: 1.6;
+        padding: 0 0 40px;
+    }
+}

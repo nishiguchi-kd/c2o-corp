@@ -1,0 +1,6 @@
+// _mixins.scss
+@mixin is-sp {
+    @media (max-width: 768px) {
+      @content;
+    }
+}
